@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Hub</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Chatbot container styling */
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 600px;
+            box-shadow: 0px 4px 10px rgba(174, 147, 147, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: none;
+            /* Hidden by default */
+        }
+
+        /* Chatbot toggle button */
+        #chatbot-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f84914;
+            color: #f6faf5;
+            border: none;
+            border-radius: 90%;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            width: 120px;
+            height: auto;
+            transition: transform 0.6s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Hero Section Text Animation */
+        .hero-content h1 {
+            font-size: 3rem;
+            color: rgb(240, 23, 8);
+            animation: textFade 3s infinite;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            animation: textFade 3s infinite;
+        }
+
+        @keyframes textFade {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="fixed"></div>
+        <div class="logo">
+            <img src="35.png" alt="Agriculture Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Agriculture Hub</h1>
+            <p>Discover the Roots of Life and Sustainability</p>
+            <a href="#resources" class="btn">Explore Resources</a>
+        </div>
+    </section>
+
+    <section id="about" class="about dark-theme">
+        <div class="about-content">
+            <h2>About Agriculture Hub</h2>
+            <p>Agriculture is the backbone of human survival, providing food, raw materials, and employment
+                opportunities. Our platform educates and inspires individuals to value and contribute to sustainable
+                agricultural practices.</p>
+            <p>Learn how agriculture shapes our daily lives and how we can ensure its future viability.</p>
+            <a href="#community" class="btn">Join Our Community</a>
+        </div>
+        <div class="about-image">
+            <img src="35.png" alt="About Agriculture Insights">
+        </div>
+    </section>
+
+    <section id="resources" class="menu">
+        <h2>Resources</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="10.jpg" alt="Crop Management">
+                <h3>Crop Management</h3>
+                <p>Explore effective techniques for growing healthy crops and ensuring food security.</p>
+            </div>
+            <div class="menu-item">
+                <img src="11.jpg" alt="Sustainable Farming">
+                <h3>Sustainable Farming</h3>
+                <p>Learn about eco-friendly farming practices that benefit both the environment and farmers.</p>
+            </div>
+            <div class="menu-item">
+                <img src="12.jpg" alt="Agricultural Technology">
+                <h3>Agricultural Technology</h3>
+                <p>Discover innovations in technology that are revolutionizing the agriculture industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="reservations">
+        <div class="reservation-form">
+            <h2>Join Our Community</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a7051581-a29c-4722-bcbe-8523dd9a3f67">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="date" name="date" required>
+                <textarea name="message" placeholder="Why is agriculture important to you?" rows="5"></textarea>
+                <button type="submit">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Members Say</h2>
+        <div class="testimonial">
+            <img src="1.png" alt="Farmer 1">
+            <p>"Agriculture helped me adopt sustainable practices that increased my yield and preserved nature."</p>
+            <h4>Rajesh Kumar</h4>
+        </div>
+        <div class="testimonial">
+            <img src="2.png" alt="Farmer 2">
+            <p>"The resources on modern farming techniques were incredibly helpful for my family farm."</p>
+            <h4>Emily Clark</h4>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="6.jpg" alt="Farm Land">
+            </div>
+            <div class="image-item">
+                <img src="7.jpg" alt="Organic Farming">
+            </div>
+            <div class="image-item">
+                <img src="8.jpg" alt="Farming Machinery">
+            </div>
+            <div class="image-item">
+                <img src="9.jpg" alt="Community Work">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Ganpatpur, Jaipur (Raj)</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>005rahul889@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <input type="hidden" name="access_key" value="8e72259e-111a-4cf9-973b-18d30b0e5052">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <div id="chatbot-container">
+        <iframe
+            src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/22/05/20241222054609-XI889B5Z.json"
+            style="border: none; width: 100%; height: 100%;" title="Chatbot"></iframe>
+    </div>
+
+    <!-- Chatbot toggle button -->
+    <button id="chatbot-toggle">
+        <i class="fas fa-comment"></i>
+    </button>
+
+    <script>
+        // Script to toggle chatbot visibility
+        const chatbotContainer = document.getElementById('chatbot-container');
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+
+        chatbotToggle.addEventListener('click', () => {
+            const isChatbotVisible = chatbotContainer.style.display === 'block';
+            chatbotContainer.style.display = isChatbotVisible ? 'none' : 'block';
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="35.png" alt="Agriculture Insights Logo">
+            </div>
+            <nav class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#resources">Resources</a>
+                <a href="#community">Community</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2024 Agriculture. All rights reserved.</p>
+        <p class="footer-text">&copy; Made by: Rahul Choudhary</p>
+    </footer>
+</body>
+
+</html>
